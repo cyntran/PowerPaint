@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<fileset-config file-format-version="1.2.0" simple-config="false" sync-formatter="false">
+  <local-check-config name="TCSS 305 Next Line Style" location="support_files/tcss305_checkstyle_nextline.xml" type="project" description="The &quot;braces on next line&quot; style for Spring 2015 TCSS 305.">
+    <additional-data name="protect-config-file" value="true"/>
+  </local-check-config>
+  <local-check-config name="TCSS 305 Same Line Style" location="support_files/tcss305_checkstyle_sameline.xml" type="project" description="The &quot;braces on same line&quot; style for Spring 2015  TCSS 305.">
+    <additional-data name="protect-config-file" value="true"/>
+  </local-check-config>
+  <local-check-config name="TCSS 305 Next Line Style for Test Code" location="support_files/tcss305_checkstyle_nextline_test.xml" type="project" description="The &quot;braces on next line&quot; style for test code for Spring 2015  TCSS 305.">
+    <additional-data name="protect-config-file" value="true"/>
+  </local-check-config>
+  <local-check-config name="TCSS 305 Same Line Style for Test Code" location="support_files/tcss305_checkstyle_sameline_test.xml" type="project" description="The &quot;braces on same line&quot; style for test code for Spring 2015  TCSS 305.">
+    <additional-data name="protect-config-file" value="true"/>
+  </local-check-config>
+  <fileset name="all" enabled="true" check-config-name="TCSS 305 Same Line Style" local="true">
+    <file-match-pattern match-pattern="." include-pattern="true"/>
+    <file-match-pattern match-pattern="Test.java" include-pattern="false"/>
+  </fileset>
+  <fileset name="test" enabled="true" check-config-name="TCSS 305 Same Line Style for Test Code" local="true">
+    <file-match-pattern match-pattern="Test.java$" include-pattern="true"/>
+  </fileset>
+</fileset-config>
